@@ -42,9 +42,10 @@ The creation and use of images that fit over a detected person’s face, or filt
        1. Step 1: create a new filter variable under the original filter variable
        2. Call SCFilterOverlay(), but the image pushed into this function should be the image that has the previous filter overlaid already
          1. Example : 
-            ``` new_im = SCFilterOverlay(test_img,lm,filter)
-	    
-            new_im2 = SCFilterOverlay(new_im,lm,filter1) ```
+            ```
+	    new_im = SCFilterOverlay(test_img,lm,filter)
+            new_im2 = SCFilterOverlay(new_im,lm,filter1) 
+	    ```
      3. You can add your own filter images if you follow the following steps
        1. Upload an image into the Filter_Images Folder on google collab (or github but you have to reclone the github in google collab)
        2. Mark down desired landmarks on filter image and state what these landmarks correspond to in the createLandMarks() function
