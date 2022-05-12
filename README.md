@@ -44,6 +44,7 @@ The creation and use of images that fit over a detected person’s face, or filt
          1. Example : 
      
             `new_im = SCFilterOverlay(test_img,lm,filter)
+	    
             new_im2 = SCFilterOverlay(new_im,lm,filter1)`
      3. You can add your own filter images if you follow the following steps
        1. Upload an image into the Filter_Images Folder on google collab (or github but you have to reclone the github in google collab)
