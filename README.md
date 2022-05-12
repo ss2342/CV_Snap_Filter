@@ -1,4 +1,6 @@
-Instructions to Run our SnapChat Filter Code:
+# CV Final Project: Snapchat 
+
+## Instructions to Run our SnapChat Filter Code:
 1. Download a copy of the notebook from Either of the sources listed below:
    1. Github Link: 
     https://github.com/ssingh1997/CV_Snap_Filter/blob/master/CV_Final_Submission.ipynb
