@@ -26,28 +26,29 @@ The creation and use of images that fit over a detected person’s face, or filt
 
 
    3. filter: To make life simpler, we just have the user insert a number 0-7 to call a filter. Listed below will be a table of the integers to filter names. 
-      1.** Table of Filter Images **
-	- Filter PNG Name Description
-	- 0 Luigi_Stache Mustache with Nose 
-	- 1 HP_Glasses Round glasses
-	- 2 Eyes Googly Eyes
-	- 3 Binky A Binky
-	- 4 Mario_Hat A hat
-	- 5 beard A beard
- 	- 6 blush Anime-esque blush that goes on cheeks
-	- 7 squidward_nose An elongated nose similar to Squidward’s from the show Spongebob Squarepants
-	- 8 clown_nose Clown nose
+      
+	      1. ** Table of Filter Images **
+		- Filter PNG Name Description
+		- 0 Luigi_Stache Mustache with Nose 
+		- 1 HP_Glasses Round glasses
+		- 2 Eyes Googly Eyes
+		- 3 Binky A Binky
+		- 4 Mario_Hat A hat
+		- 5 beard A beard
+		- 6 blush Anime-esque blush that goes on cheeks
+		- 7 squidward_nose An elongated nose similar to Squidward’s from the show Spongebob Squarepants
+		- 8 clown_nose Clown nose
 
-     2. If you want to apply MULTIPLE filters, there are a few steps that have to be taken
-       1. Step 1: create a new filter variable under the original filter variable
-       2. Call SCFilterOverlay(), but the image pushed into this function should be the image that has the previous filter overlaid already
-         1. Example : 
-       
-            `new_im = SCFilterOverlay(test_img,lm,filter)`
-	    
-            `new_im2 = SCFilterOverlay(new_im,lm,filter1)`
-	    
-     3. You can add your own filter images if you follow the following steps
-       1. Upload an image into the Filter_Images Folder on google collab (or github but you have to reclone the github in google collab)
-       2. Mark down desired landmarks on filter image and state what these landmarks correspond to in the createLandMarks() function
-       3. Add a new if statement with a new index number and follow the format of the previous if statements in SCFilterOverlay()
+	     2. If you want to apply MULTIPLE filters, there are a few steps that have to be taken
+	       1. Step 1: create a new filter variable under the original filter variable
+	       2. Call SCFilterOverlay(), but the image pushed into this function should be the image that has the previous filter overlaid already
+		 1. Example : 
+
+		    `new_im = SCFilterOverlay(test_img,lm,filter)`
+
+		    `new_im2 = SCFilterOverlay(new_im,lm,filter1)`
+
+	     3. You can add your own filter images if you follow the following steps
+		       1. Upload an image into the Filter_Images Folder on google collab (or github but you have to reclone the github in google collab)
+		       2. Mark down desired landmarks on filter image and state what these landmarks correspond to in the createLandMarks() function
+		       3. Add a new if statement with a new index number and follow the format of the previous if statements in SCFilterOverlay()
