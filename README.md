@@ -26,8 +26,7 @@ The creation and use of images that fit over a detected person’s face, or filt
 
 
    3. filter: To make life simpler, we just have the user insert a number 0-7 to call a filter. Listed below will be a table of the integers to filter names. 
-      
-	      1. ** Table of Filter Images **
+      		1. **Table of Filter Images** 
 		- Filter PNG Name Description
 		- 0 Luigi_Stache Mustache with Nose 
 		- 1 HP_Glasses Round glasses
