@@ -3,7 +3,7 @@
 
 	The creation and use of images that fit over a detected person’s face, or filter images, have been becoming increasingly popular in this age of social media. These filters that were popularized by Snapchat and currently used in other social media apps such as Messenger, and Instagram leverage Computer Vision and Image Processing concepts in order to properly align a base filter image over a face. This report will explore these concepts, and using these techniques in Python, a basic but original implementation of “Snapchat” filters was created and will be discussed in this report.
 
-### Link to Google Colab Notebook Version: 
+
 
 ## Instructions to Run our SnapChat Filter Code:
 1. Download a copy of the notebook from Either the Github Repo or the Colab Notebook listed below:
