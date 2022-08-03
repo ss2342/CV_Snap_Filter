@@ -23,18 +23,23 @@ from tqdm import tqdm
 import keras
 import argparse
 
+import pathlib
+
+import pathlib
+home_dir = pathlib.Path("main.py").parent.resolve()
+
 
 
 #CHANGEABLE VAR: if you want to Train the model, set this pretrained var to False
 pretrained = True
 
-data_zip = './CV_Snap_Filter/facial-keypoints-detection.zip'
+data_zip = f'{home_dir}/facial-keypoints-detection.zip'
 with zipfile.ZipFile(data_zip, 'r') as zip_ref:
     zip_ref.extractall('.')
 
 
-training_zip = './training.zip'
-test_zip = './test.zip'
+training_zip = f'{home_dir}/training.zip'
+test_zip = f'{home_dir}/test.zip'
 
 with zipfile.ZipFile(training_zip, 'r') as zip_ref:
     zip_ref.extractall('.')
